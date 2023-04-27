@@ -1,0 +1,47 @@
+{% extends "accounts/base.html" %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+    <!-- breadcrumb-section -->
+
+    <div class="breadcrumb-section breadcrumb-bg">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8 offset-lg-2 text-center">
+
+                    <div class="breadcrumb-text">
+
+                        <p>회원 관리</p>
+
+                        <h1>가입</h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="product-section mt-150 mb-150">
+	
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <!-- end breadcrumb section -->
+                        <form action="" method="post" novalidate>
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                            <input type="submit" class="bordered-btn" value="회원가입"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
