@@ -52,10 +52,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # third apps
     "django_bootstrap5",
-    "django_liquid",
     # local apps
     "accounts",
     "mall_test",
+    "mall",
 ]
 
 MIDDLEWARE = [
